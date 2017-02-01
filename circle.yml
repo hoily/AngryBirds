@@ -8,4 +8,4 @@ build:
 
 test:
   override:
-    - flake8 project --ignore=E128,E501
+    - flake8 angrybirds --ignore=E128,E501
