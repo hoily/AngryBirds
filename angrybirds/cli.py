@@ -3,6 +3,7 @@ from .auth import login
 from .stream import AngryBirdsStreamListener
 import tweepy
 
+
 @click.group()
 @click.pass_context
 def main(ctx):
@@ -17,4 +18,3 @@ def listen(ctx):
     streamListener = AngryBirdsStreamListener()
     stream = tweepy.Stream(auth=api.auth, listener=streamListener)
     stream.filter(track=['python'])
-
