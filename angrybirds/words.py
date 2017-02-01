@@ -13,5 +13,5 @@ def load_yaml(path):
 
 
 def load_words():
-    wordsDict = load_yaml(os.path.join(BASE_DIR, 'data/words.yaml'))
+    wordsDict = load_yaml(os.path.join(BASE_DIR, 'data/', 'words.yaml'))
     return wordsDict['words']
