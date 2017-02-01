@@ -2,7 +2,7 @@ machine:
   python:
     version: 3.5.0
 
-build:
+dependencies:
   post:
     - pip install flake8
 
