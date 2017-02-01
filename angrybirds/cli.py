@@ -1,6 +1,7 @@
 import click
 from .auth import login
 from .stream import AngryBirdsStreamListener
+from .words import load_words
 import tweepy
 
 
@@ -17,4 +18,4 @@ def listen(ctx):
     api = tweepy.API(auth)
     streamListener = AngryBirdsStreamListener()
     stream = tweepy.Stream(auth=api.auth, listener=streamListener)
-    stream.filter(track=['python'])
+    stream.filter(track=load_words())
