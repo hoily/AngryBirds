@@ -1,5 +1,6 @@
 import tweepy
 import json
+from .mongo import insert_document
 
 
 class AngryBirdsStreamListener(tweepy.StreamListener):
@@ -7,7 +8,8 @@ class AngryBirdsStreamListener(tweepy.StreamListener):
     def on_status(self, status):
         if "retweeted_status" in status._json:
             return
-        print(json.dumps(status._json, sort_keys=True, indent=4))
+        insert_document(status._json, 'tweets')
+        print(f'{status._json["user"]["screen_name"]}: {status._json["text"]}')
 
     def on_error(self, status_code):
         if status_code == 420:
