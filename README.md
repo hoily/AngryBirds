@@ -5,8 +5,7 @@ them as 'Angry' or 'Calm'
 
 ## Install
 
-`pip install -r requriements.txt`
+    pip install https://github.com/hoily/AngryBirds
 
 ## Usage
-
-`python angrybirds`
+    ab listen
