@@ -1,5 +1,4 @@
 import tweepy
-import json
 from .mongo import insert_document
 
 
