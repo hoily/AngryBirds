@@ -12,7 +12,7 @@ class AngryBirdsStreamListener(tweepy.StreamListener):
     def on_status(self, status):
         if self.should_ignore(status._json):
             return
-        insert_document(status._json, 'tweets')
+        insert_document(status._json, 'raw_tweets')
         print('{0}: {1}'.format(status._json["user"]["screen_name"],
                                 status._json["text"]))
 
