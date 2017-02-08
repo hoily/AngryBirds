@@ -5,7 +5,7 @@ from .mongo import insert_document
 class AngryBirdsStreamListener(tweepy.StreamListener):
 
     def on_status(self, status):
-        if "retweeted_status" in status._json:
+        if "retweeted_status" in status._json or status._json["lang"] != "en":
             return
         insert_document(status._json, 'tweets')
         print('{0}: {1}'.format(status._json["user"]["screen_name"],
