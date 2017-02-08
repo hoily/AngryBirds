@@ -3,13 +3,11 @@ from pymongo import MongoClient
 
 def get_db():
     client = MongoClient('localhost', 27017)
-    db = client['angry-birds']
-    return db
+    return client['angry-birds']
 
 
 def get_collection(collection_name, db):
-    collection = db[collection_name]
-    return collection
+    return db[collection_name]
 
 
 def insert_document(document, collection_name):
