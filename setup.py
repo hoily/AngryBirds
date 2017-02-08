@@ -7,7 +7,8 @@ setup(
         'tweepy==3.5.0',
         'requests==2.13.0',
         'click==6.7',
-        'pyaml==16.12.2'
+        'pyaml==16.12.2',
+        'pymongo==3.4.0'
     ],
     entry_points='''
         [console_scripts]
