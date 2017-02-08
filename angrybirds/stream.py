@@ -9,7 +9,8 @@ class AngryBirdsStreamListener(tweepy.StreamListener):
         if "retweeted_status" in status._json:
             return
         insert_document(status._json, 'tweets')
-        print(f'{status._json["user"]["screen_name"]}: {status._json["text"]}')
+        print('{0}: {1}'.format(status._json["user"]["screen_name"],
+                                status._json["text"]))
 
     def on_error(self, status_code):
         if status_code == 420:
