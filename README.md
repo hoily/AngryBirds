@@ -1,5 +1,5 @@
 # AngryBirds
-[![CircleCI](https://circleci.com/gh/hoily/AngryBirds.svg?style=svg)](https://circleci.com/gh/hoily/AngryBirds)
+[![CircleCI](https://circleci.com/gh/ucsu-css/AngryBirds.svg?style=svg)](https://circleci.com/gh/ucsu-css/AngryBirds)
 
 A python script that will analyse a Twitter user's tweets and classify them as 'Angry' or 'Calm'
 
@@ -11,7 +11,7 @@ A python script that will analyse a Twitter user's tweets and classify them as '
 
 ## Install
 
-    pip install https://github.com/hoily/AngryBirds
+    pip install https://github.com/ucsu-css/AngryBirds
 
 ## Usage
     ab listen
