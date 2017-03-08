@@ -17,9 +17,9 @@ def load_words():
     return wordsDict['words']
 
 
-def get_keyword(text):
+def get_keywords(text):
     keywords = load_words()
     for keyword in keywords:
         if keyword.lower() in text.lower():
-            return keyword
+            yield keyword
     return ""
