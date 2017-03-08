@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2016 Hoily
+Copyright (c) 2016 UCSU-CSS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
