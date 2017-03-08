@@ -15,3 +15,11 @@ def load_yaml(path):
 def load_words():
     wordsDict = load_yaml(os.path.join(BASE_DIR, 'data', 'words.yaml'))
     return wordsDict['words']
+
+
+def get_keyword(text):
+    keywords = load_words()
+    for keyword in keywords:
+        if keyword.lower() in text.lower():
+            return keyword
+    return ""
