@@ -4,5 +4,4 @@ analyzer = SentimentIntensityAnalyzer()
 
 
 def get_analysis(text):
-    vs = analyzer.polarity_scores(text)
-    return(vs)
+    return analyzer.polarity_scores(text)
