@@ -1,0 +1,4 @@
+tweepy==3.5.0
+requests==2.13.0
+click==6.7
+vaderSentiment==2.5

@@ -14,3 +14,9 @@ def insert_document(document, collection_name):
     db = get_db()
     collection = get_collection(collection_name, db)
     collection.insert_one(document)
+
+
+def remove_document(document, collection_name):
+    db = get_db()
+    collection = get_collection(collection_name, db)
+    collection.delete_one(document)
